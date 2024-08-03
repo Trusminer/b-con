@@ -1,0 +1,29 @@
+# Block all robots from accessing the site
+User-agent: *
+Disallow: /
+
+# Block specific robots
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+# Block robots from accessing specific directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Block robots from accessing specific files
+Disallow: /robots.txt
+
+# Block robots from accessing files with specific extensions
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+
+# Crawl delay for robots
+Crawl-delay: 10
